@@ -8,5 +8,8 @@ public enum CommandCode : byte
     EditUser,
     DeleteUser,
     SendMessage,
-    UpdateUser
+    UpdateUser, 
+    GetTime,
+    GetStatus,
+    EchoMessage
 }

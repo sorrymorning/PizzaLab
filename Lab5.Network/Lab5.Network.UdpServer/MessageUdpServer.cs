@@ -19,6 +19,7 @@ internal class MessageUdpServer : UdpServerBase, IMessageApi
         var commandCode = (CommandCode)command!.Code;
         Console.WriteLine($"+ command: {commandCode}");
 
-        await SendMessage(command.Arguments["Data"]?.ToString() ?? string.Empty);
+
+        //await SendMessage(command.Arguments["Data"]?.ToString() ?? string.Empty);
     }
 }
