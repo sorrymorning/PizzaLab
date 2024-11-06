@@ -16,7 +16,10 @@
       },
       "Lab5.Network.Common/1.0.0": {
         "runtime": {
-          "Lab5.Network.Common.dll": {}
+          "Lab5.Network.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
