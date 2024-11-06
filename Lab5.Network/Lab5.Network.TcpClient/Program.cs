@@ -43,7 +43,8 @@ internal class Program
                 var userIdString = Console.ReadLine();
                 int.TryParse(userIdString, out var userId);
                 var user = await userApi.GetAsync(userId);
-                Console.WriteLine($"Id={user?.Id}, Name={user?.Name}, Active={user?.Active}");
+                //Console.WriteLine($"Id={user?.Id}, Name={user?.Name}, Active={user?.Active}");
+                Console.WriteLine($"| {user?.Id,5} | {user?.Name,20} | {user?.Status,6} |{user?.Customer,15}");
             }
 
             if (key.Key == ConsoleKey.D3) 
@@ -53,9 +54,9 @@ internal class Program
                 Console.Write("Напишите ваше имя: ");
                 var addName = Console.ReadLine() ?? "empty";
                 var addUser = new User(Id: 0,
-                    Name: addName,
+                    Name: addUserName,
                     Active: true,
-                    Customer: addUserName,
+                    Customer: addName,
                     Status: "Готовится"
 
                 );
@@ -63,6 +64,33 @@ internal class Program
 
                 Console.WriteLine(addResult ? "Ok" : "Error");
                 
+            }
+            if (key.Key == ConsoleKey.D4) // Обновление пользователя
+            {
+                Console.Write("Введите ID пользователя для обновления: ");
+                var updateIdString = Console.ReadLine();
+                int.TryParse(updateIdString, out var updateId);
+
+                Console.Write("Введите новое имя пользователя: ");
+                var updateName = Console.ReadLine();
+
+                Console.Write("Введите новый статус пользователя (например, 'Готов'): ");
+                var updateStatus = Console.ReadLine();
+
+                var updateUser = new User(Id: updateId, Name: updateName, Active: true, Customer: "Имя заказчика", Status: updateStatus);
+                var updateResult = await userApi.UpdateAsync(updateId, updateUser);
+
+                Console.WriteLine(updateResult ? "Пользователь обновлен" : "Ошибка при обновлении пользователя");
+            }
+            if (key.Key == ConsoleKey.D5) // Удаление пользователя
+            {
+                Console.Write("Введите ID пользователя для удаления: ");
+                var deleteIdString = Console.ReadLine();
+                int.TryParse(deleteIdString, out var deleteId);
+
+                var deleteResult = await userApi.DeleteAsync(deleteId);
+
+                Console.WriteLine(deleteResult ? "Пользователь удален" : "Ошибка при удалении пользователя");
             }
 
             if (key.Key == ConsoleKey.Escape)

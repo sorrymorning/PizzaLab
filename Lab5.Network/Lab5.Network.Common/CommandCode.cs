@@ -7,5 +7,6 @@ public enum CommandCode : byte
     AddUser,
     EditUser,
     DeleteUser,
-    SendMessage
+    SendMessage,
+    UpdateUser
 }

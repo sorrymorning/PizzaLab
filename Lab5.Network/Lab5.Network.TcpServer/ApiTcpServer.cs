@@ -53,6 +53,30 @@ public class ApiTcpServer : TcpServerBase
                         ["Data"] = users
                     }
                 };
+            case CommandCode.DeleteUser:
+                var deleteId = Convert.ToInt32(command.Arguments["Id"]?.ToString());
+                var deleteResult = await userApi.DeleteAsync(deleteId);
+                return new Command()
+                {
+                    Code = (byte)CommandCode.DeleteUser,
+                    Arguments = new Dictionary<string, object?>()
+                    {
+                        ["Data"] = deleteResult
+                    }
+                };
+            case CommandCode.UpdateUser:
+                var updateId = Convert.ToInt32(command.Arguments["Id"]?.ToString());
+                var updateUserData = command.Arguments["Data"]?.ToString() ?? "{}";
+                var updateUser = JsonSerializer.Deserialize<User>(updateUserData);
+                var updateResult = await userApi.UpdateAsync(updateId, updateUser!);
+                return new Command()
+                {
+                    Code = (byte)CommandCode.UpdateUser,
+                    Arguments = new Dictionary<string, object?>()
+                    {
+                        ["Data"] = updateResult
+                    }
+                };
             default:
                 return new Command()
                 {

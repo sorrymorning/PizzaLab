@@ -34,3 +34,4 @@ C:\Users\amirk\OneDrive\Рабочий стол\Lab5.Network\Lab5.Network\Lab5.N
 C:\Users\amirk\OneDrive\Рабочий стол\Lab5.Network\Lab5.Network\Lab5.Network.TcpServer\obj\Debug\net6.0\Lab5.Network.TcpServer.pdb
 C:\Users\amirk\OneDrive\Рабочий стол\Lab5.Network\Lab5.Network\Lab5.Network.TcpServer\obj\Debug\net6.0\Lab5.Network.TcpServer.genruntimeconfig.cache
 C:\Users\amirk\OneDrive\Рабочий стол\Lab5.Network\Lab5.Network\Lab5.Network.TcpServer\obj\Debug\net6.0\ref\Lab5.Network.TcpServer.dll
+C:\Users\amirk\OneDrive\Рабочий стол\Lab5.Network\Lab5.Network\Lab5.Network.TcpServer\obj\Debug\net6.0\Lab5.Network.TcpServer.sourcelink.json

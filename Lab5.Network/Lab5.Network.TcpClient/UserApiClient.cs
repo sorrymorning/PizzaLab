@@ -35,9 +35,28 @@ public class UserApiClient : IUserApi
         return addResultValue;
     }
 
-    public Task<bool> DeleteAsync(int id)
+    public async Task<bool> DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        var command = new Command()
+        {
+            Code = (byte)CommandCode.DeleteUser,
+            Arguments = new Dictionary<string, object?>()
+            {
+                ["Id"] = id
+            }
+        };
+
+        var result = await netTcpClient.SendAsync(command);
+
+        if (result == null)
+        {
+            return false;
+        }
+
+        var deleteResult = result.Arguments["Data"]?.ToString();
+        bool.TryParse(deleteResult, out var deleteResultValue);
+
+        return deleteResultValue;
     }
 
     public async Task<User[]> GetAllAsync()
@@ -80,9 +99,29 @@ public class UserApiClient : IUserApi
             JsonSerializer.Deserialize<User>(userJson) : null;
     }
 
-    public Task<bool> UpdateAsync(int id, User updateUser)
+    public async Task<bool> UpdateAsync(int id, User updateUser)
     {
-        throw new NotImplementedException();
+        var command = new Command()
+        {
+            Code = (byte)CommandCode.UpdateUser,
+            Arguments = new Dictionary<string, object?>()
+            {
+                ["Id"] = id,
+                ["Data"] = updateUser
+            }
+        };
+
+        var result = await netTcpClient.SendAsync(command);
+
+        if (result == null)
+        {
+            return false;
+        }
+
+        var updateResult = result.Arguments["Data"]?.ToString();
+        bool.TryParse(updateResult, out var updateResultValue);
+
+        return updateResultValue;
     }
 
 
