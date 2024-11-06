@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab5.Network\\Lab5.Network\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F58FBDB6-E533-4725-A593-7D1C7EE3C74B}|Lab5.Network.TcpServer\\Lab5.Network.TcpServer.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\lab5.network\\lab5.network\\lab5.network.tcpserver\\apitcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F58FBDB6-E533-4725-A593-7D1C7EE3C74B}|Lab5.Network.TcpServer\\Lab5.Network.TcpServer.csproj|solutionrelative:lab5.network.tcpserver\\apitcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{17066267-6103-4166-B8E8-AD87B027C8EA}|Lab5.Network.TcpClient\\Lab5.Network.TcpClient.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\lab5.network\\lab5.network\\lab5.network.tcpclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17066267-6103-4166-B8E8-AD87B027C8EA}|Lab5.Network.TcpClient\\Lab5.Network.TcpClient.csproj|solutionrelative:lab5.network.tcpclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F58FBDB6-E533-4725-A593-7D1C7EE3C74B}|Lab5.Network.TcpServer\\Lab5.Network.TcpServer.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\lab5.network\\lab5.network\\lab5.network.tcpserver\\apitcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F58FBDB6-E533-4725-A593-7D1C7EE3C74B}|Lab5.Network.TcpServer\\Lab5.Network.TcpServer.csproj|solutionrelative:lab5.network.tcpserver\\apitcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17066267-6103-4166-B8E8-AD87B027C8EA}|Lab5.Network.TcpClient\\Lab5.Network.TcpClient.csproj|c:\\users\\amirk\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\lab5.network\\lab5.network\\lab5.network.tcpclient\\userapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -51,31 +51,30 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T10:41:12.702Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ApiTcpServer.cs",
               "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab5.Network\\Lab5.Network\\Lab5.Network.TcpServer\\ApiTcpServer.cs",
               "RelativeDocumentMoniker": "Lab5.Network.TcpServer\\ApiTcpServer.cs",
               "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab5.Network\\Lab5.Network\\Lab5.Network.TcpServer\\ApiTcpServer.cs",
               "RelativeToolTip": "Lab5.Network.TcpServer\\ApiTcpServer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvx4AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T09:10:32.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab5.Network\\Lab5.Network\\Lab5.Network.TcpClient\\Program.cs",
               "RelativeDocumentMoniker": "Lab5.Network.TcpClient\\Program.cs",
               "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab5.Network\\Lab5.Network\\Lab5.Network.TcpClient\\Program.cs",
               "RelativeToolTip": "Lab5.Network.TcpClient\\Program.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAIwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAIwH4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T10:39:39.24Z",
               "EditorCaption": ""
@@ -88,7 +87,7 @@
               "RelativeDocumentMoniker": "Lab5.Network.TcpClient\\UserApiClient.cs",
               "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab5.Network\\Lab5.Network\\Lab5.Network.TcpClient\\UserApiClient.cs",
               "RelativeToolTip": "Lab5.Network.TcpClient\\UserApiClient.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAowG0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwG0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T19:57:45.84Z",
               "EditorCaption": ""
@@ -103,8 +102,7 @@
               "RelativeToolTip": "Lab5.Network.Common\\Const.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T18:54:25.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T18:54:25.724Z"
             },
             {
               "$type": "Document",

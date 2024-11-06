@@ -65,22 +65,33 @@ internal class Program
                 Console.WriteLine(addResult ? "Ok" : "Error");
                 
             }
-            if (key.Key == ConsoleKey.D4) // Обновление пользователя
+            if (key.Key == ConsoleKey.D4) // Обновление только статуса пользователя
             {
-                Console.Write("Введите ID пользователя для обновления: ");
+                Console.Write("Введите ID пользователя для обновления статуса: ");
                 var updateIdString = Console.ReadLine();
                 int.TryParse(updateIdString, out var updateId);
 
-                Console.Write("Введите новое имя пользователя: ");
-                var updateName = Console.ReadLine();
+                // Получаем текущие данные пользователя
+                var existingUser = await userApi.GetAsync(updateId);
+                if (existingUser == null)
+                {
+                    Console.WriteLine("Пользователь с таким ID не найден.");
+                    continue;
+                }
 
-                Console.Write("Введите новый статус пользователя (например, 'Готов'): ");
-                var updateStatus = Console.ReadLine();
 
-                var updateUser = new User(Id: updateId, Name: updateName, Active: true, Customer: "Имя заказчика", Status: updateStatus);
-                var updateResult = await userApi.UpdateAsync(updateId, updateUser);
+                // Создаем новый объект пользователя с измененным только статусом
+                var updatedUser = new User(
+                    Id: existingUser.Id,
+                    Name: existingUser.Name,
+                    Active: existingUser.Active,
+                    Customer: existingUser.Customer,
+                    Status: "Готов"
+                );
 
-                Console.WriteLine(updateResult ? "Пользователь обновлен" : "Ошибка при обновлении пользователя");
+                var updateResult = await userApi.UpdateAsync(updateId, updatedUser);
+
+                Console.WriteLine(updateResult ? "Статус пользователя обновлен" : "Ошибка при обновлении статуса пользователя");
             }
             if (key.Key == ConsoleKey.D5) // Удаление пользователя
             {
@@ -106,11 +117,11 @@ internal class Program
     {
         lock (_locker)
         {
-            Console.WriteLine("1 - Get all users");
-            Console.WriteLine("2 - Get user by id");
+            Console.WriteLine("1 - Вывести все заказы");
+            Console.WriteLine("2 - Показать заказ по id");
             Console.WriteLine("3 - Заказать пиццу");
-            Console.WriteLine("4 - Update user");
-            Console.WriteLine("5 - Delete user");
+            Console.WriteLine("4 - Установить готовый заказ");
+            Console.WriteLine("5 - Удалить заказ");
             Console.WriteLine("-------");
         }
     }
