@@ -59,8 +59,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T10:41:12.702Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -70,7 +69,7 @@
               "RelativeDocumentMoniker": "Lab5.Network.UdpServer\\MessageUdpServer.cs",
               "ToolTip": "C:\\Users\\amirk\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Lab5.Network\\Lab5.Network\\Lab5.Network.UdpServer\\MessageUdpServer.cs",
               "RelativeToolTip": "Lab5.Network.UdpServer\\MessageUdpServer.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwvxUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T11:25:03.643Z",
               "EditorCaption": ""
@@ -85,8 +84,7 @@
               "RelativeToolTip": "Lab5.Network.Common\\CommandCode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T11:24:12.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T11:24:12.023Z"
             },
             {
               "$type": "Document",
@@ -110,8 +108,7 @@
               "RelativeToolTip": "Lab5.Network.TcpClient\\Program.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAIwH4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T10:39:39.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T10:39:39.24Z"
             },
             {
               "$type": "Document",
