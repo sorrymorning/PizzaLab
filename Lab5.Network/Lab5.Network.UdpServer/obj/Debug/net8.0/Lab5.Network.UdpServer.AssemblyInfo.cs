@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab5.Network.UdpServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c8751fd62173d2d30b93ba1d087c24c4605b728")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4e012a3240c5e66a6cd27315a18d5c15e544657")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab5.Network.UdpServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab5.Network.UdpServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

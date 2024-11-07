@@ -23,4 +23,18 @@ public class MessageApiClient : IMessageApi
         await netUdpClient.SendAsync(command);
         return true;
     }
+    public async Task<bool> OrderPizza(string pizzaType)
+    {
+        var command = new Command()
+        {
+            Code = (byte)CommandCode.OrderPizza,
+            Arguments = new Dictionary<string, object?>()
+            {
+                ["Data"] = pizzaType
+            }
+        };
+
+        await netUdpClient.SendAsync(command);
+        return true;
+    }
 }

@@ -19,7 +19,26 @@ internal class MessageUdpServer : UdpServerBase, IMessageApi
         var commandCode = (CommandCode)command!.Code;
         Console.WriteLine($"+ command: {commandCode}");
 
+        switch (commandCode)
+        {
+            case CommandCode.SendMessage:
+                await SendMessage(command.Arguments["Data"]?.ToString() ?? string.Empty);
+                break;
+            case CommandCode.OrderPizza:
+                var pizzaType = command.Arguments["Data"]?.ToString() ?? string.Empty;
+                await OrderPizza(pizzaType); // Обработка команды заказа пиццы
+                break;
 
-        await SendMessage(command.Arguments["Data"]?.ToString() ?? string.Empty);
+            default:
+                Console.WriteLine("Неизвестная команда.");
+                break;
+        }
+        //await SendMessage(command.Arguments["Data"]?.ToString() ?? string.Empty);
+    }
+    public Task<bool> OrderPizza(string pizzaType)
+    {
+        string orderMessage = $"Заказана пицца: {pizzaType}.";
+        Console.WriteLine(orderMessage);
+        return Task.FromResult(true);
     }
 }

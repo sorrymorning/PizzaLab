@@ -35,7 +35,13 @@ internal class Program
                 await messageApi.SendMessage(message);
                 Console.WriteLine($"Message sent: {message}");
             }
-
+            if (key.Key == ConsoleKey.D2) 
+            {
+                Console.Write("Enter pizza type: ");
+                var pizzaType = Console.ReadLine() ?? string.Empty;
+                await messageApi.OrderPizza(pizzaType);
+                Console.WriteLine($"Pizza order sent: {pizzaType}");
+            }
             if (key.Key == ConsoleKey.Escape)
             {
                 break;
@@ -49,6 +55,7 @@ internal class Program
         lock (_locker)
         {
             Console.WriteLine("1 - Send message");
+            Console.WriteLine("2 - Order Pizza");
             Console.WriteLine("-------");
         }
     }
